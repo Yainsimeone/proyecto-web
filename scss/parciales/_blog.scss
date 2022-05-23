@@ -1,0 +1,30 @@
+/*blog*/
+
+.bl {
+    background-color: dimgrey;
+    color: #5893D4;
+    background-image: url(../imagenes/fondo-4.jpg);
+}
+
+.container-seccion {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+    margin-top: 3rem;
+}
+
+.card-blog {
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+
+.card-body-one {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+}

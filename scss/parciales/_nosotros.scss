@@ -1,0 +1,101 @@
+/* nosotros*/
+
+.nosotros {
+    background-image: url(../imagenes/fondo\ 2.jfif);
+}
+
+.contenido {
+    min-height: 200px;
+    min-width: 200px;
+    margin-top: 5rem;
+    background-size: contain;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 35% 40% 35%;
+    grid-template-areas: "ele1 ele2 ele3" "ele1 ele4 ele5" "ele1 ele4 ele5";
+}
+
+.contenido img {
+    max-height: 500px;
+    max-width: 500px;
+    margin-left: 6px;
+    border-radius: 50%;
+    border: 2px solid black;
+    grid-area: ele1;
+}
+
+.quienes {
+    display: flex;
+    font-size: xx-large;
+    color: aqua;
+    grid-area: ele2;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+.parrafo-quienes {
+    display: flex;
+    grid-area: ele3;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nuestros {
+    margin-top: 5rem;
+    font-family: -webkit-body;
+    font-size: xx-large;
+    color: aqua;
+    grid-area: ele4;
+    text-align: center;
+}
+
+.parrafo-nuestros {
+    margin-top: 5rem;
+    grid-area: ele5;
+    text-align: center;
+}
+
+.imgc320 {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .contenido {
+        display: none;
+    }
+    .contenido {
+        display: block;
+    }
+    .contenido img {
+        margin-left: 12rem;
+    }
+    .quienes {
+        margin-top: 2rem;
+    }
+    .nuestros {
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .contenido {
+        display: none;
+    }
+    .contenido {
+        display: block;
+        margin-top: 5rem;
+    }
+    .contenido img {
+        width: 300px;
+        margin: 0.5rem;
+    }
+    .quienes {
+        margin: 1rem;
+    }
+    .nuestros {
+        margin: 1rem;
+    }
+}

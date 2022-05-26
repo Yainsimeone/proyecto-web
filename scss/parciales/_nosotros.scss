@@ -1,9 +1,5 @@
 /* nosotros*/
 
-.nosotros {
-    background-image: url(../imagenes/fondo2.jfif);
-}
-
 .contenido {
     min-height: 200px;
     min-width: 200px;
@@ -13,47 +9,83 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 35% 40% 35%;
     grid-template-areas: "ele1 ele2 ele3" "ele1 ele4 ele5" "ele1 ele4 ele5";
-    .contenido img {
-        max-height: 500px;
-        max-width: 500px;
-        margin-left: 6px;
-        border-radius: 50%;
-        border: 2px solid black;
-        grid-area: ele1;
-    }
-    .quienes {
-        display: flex;
-        font-size: xx-large;
-        color: aqua;
-        grid-area: ele2;
-        justify-content: space-evenly;
-        flex-direction: column;
-        align-items: center;
-    }
-    .parrafo-quienes {
-        display: flex;
-        grid-area: ele3;
-        text-align: center;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .nuestros {
-        margin-top: 5rem;
-        font-family: -webkit-body;
-        font-size: xx-large;
-        color: aqua;
-        grid-area: ele4;
-        text-align: center;
-    }
-    .parrafo-nuestros {
-        margin-top: 5rem;
-        grid-area: ele5;
-        text-align: center;
-    }
-    .imgc320 {
-        display: none;
-    }
+}
+
+.imagen-nosotros {
+    --k: 0;
+    --j: calc(1 - var(--k));
+    --list: transparent calc(50% - #{$w}),
+    red 0 calc(50% + #{$w}),
+    transparent 0;
+    place-self: center;
+    object-fit: cover;
+    width: 90vmin;
+    height: 90vmin;
+    filter: grayScale(var(--j));
+    --mask: radial-gradient(closest-side, red calc(#{$r} - 1px), transparent #{$r}),
+    radial-gradient(closest-side, transparent calc(#{$r} - #{$o} + var(--k)*2*#{$o} - 1px), red calc(#{$r} - #{$o} + var(--k)*2*#{$o}) calc(var(--k)*100% + var(--j)*#{$r} - 1px), transparent calc(var(--k)*100% + var(--j)*#{$r})),
+    linear-gradient(var(--list)),
+    linear-gradient(90deg, var(--list)),
+    linear-gradient(45deg, var(--list)),
+    linear-gradient(-45deg, var(--list));
+    mask: var(--mask);
+    mask-composite: add, intersect, add, add;
+    transition: --k .2s ease-out;
+}
+
+.imagen-nosotros:hover {
+    --k: 1
+}
+
+.contenido img {
+    max-height: 500px;
+    max-width: 500px;
+    margin-left: 6px;
+    border-radius: 49%;
+    border: 2px solid black;
+    grid-area: ele1;
+    -webkit-border-radius: 49%;
+    -moz-border-radius: 49%;
+    -ms-border-radius: 49%;
+    -o-border-radius: 49%;
+}
+
+.quienes {
+    display: flex;
+    font-size: xx-large;
+    color: aqua;
+    grid-area: ele2;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+.parrafo-quienes {
+    display: flex;
+    grid-area: ele3;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nuestros {
+    margin-top: 5rem;
+    font-family: -webkit-body;
+    font-size: xx-large;
+    color: aqua;
+    grid-area: ele4;
+    text-align: center;
+}
+
+.parrafo-nuestros {
+    margin-top: 5rem;
+    grid-area: ele5;
+    text-align: center;
+}
+
+.imgc320 {
+    display: none;
 }
 
 @media screen and (max-width: 768px) {

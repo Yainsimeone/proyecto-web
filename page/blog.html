@@ -14,75 +14,77 @@
 </head>
 
 <body class="bl">
-    <header class="header">
+    <header>
 
-        <a class="header__marca" href="../index.html"><img class="img" src="../imagenes/Amimirlogo.png" alt="logo" width="70" height="70"></a>
-        <nav class="nav">
-            <ul class="nav__lista">
-                <li class="nav__item"><a class="nav__enlace" href="../index.html">inicio</a></li>
-                <li class="nav__item"><a class="nav__enlace" href="tienda.html">Tienda</a></li>
-                <li class="nav__item"><a class="nav__enlace" href="nosotros.html">Nosotros</a></li>
-                <li class="nav__item"><a class="nav__enlace" href="blog.html">Blog</a></li>
-                <li class="nav__item"><a class="nav__enlace" href="contacto.html">Contacto</a></li>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img class="logo-header" src="../imagenes/Amimirlogo.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-5 -7 24 24" width="32" fill="currentColor"><path d="M1 0h12a1 1 0 0 1 0 2H1a1 1 0 1 1 0-2zm0 8h12a1 1 0 0 1 0 2H1a1 1 0 1 1 0-2zm0-4h12a1 1 0 0 1 0 2H1a1 1 0 1 1 0-2z"></path></svg>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
 
-            </ul>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-2.5 -2.5 24 24" width="32" fill="currentColor"><path d="M8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12zm6.32-1.094l3.58 3.58a1 1 0 1 1-1.415 1.413l-3.58-3.58a8 8 0 1 1 1.414-1.414z"></path></svg></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
     </header>
-    <section class="container-seccion">
-        <div class="card-blog" style="width: 18rem;">
-            <img src="../imagenes/nosotros.jpeg" class="card-img-top" alt="blog" height="294" width="222">
-            <div class="card-body-one">
-                <h5 class="card-title text-center">Card title</h5>
-                <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Mas Info</a>
-            </div>
-        </div>
 
-        <div class="card-blog" style="width: 18rem;">
-            <img src="../imagenes/maxibuzos.jpg" class="card-img-top" alt="blog" height="294" width="222">
-            <div class="card-body-one">
-                <h5 class="card-title text-center">title</h5>
-                <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto aut quia repudiandae laudantium, numquam.</p>
-                <a href="#" class="btn btn-primary">Mas Info</a>
-            </div>
-        </div>
-        <div class="card-blog" style="width: 18rem;">
-            <img src="../imagenes/Amimirlogo.png" class="card-img-top" alt="blog" height="294" width="222">
-            <div class="card-body-one">
-                <h5 class="card-title text-center">title</h5>
-                <p class="card-text text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro ipsa voluptatibus, rerum accusamus ducimus.</p>
-                <a href="#" class="btn btn-primary">Mas Info</a>
-            </div>
-        </div>
-        <div class="card-blog" style="width: 18rem;">
-            <img src="../imagenes/instagram.jpeg" class="card-img-top" alt="blog" height="294" width="222">
-            <div class="card-body-one">
-                <h5 class="card-title text-center">title</h5>
-                <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit enim voluptas nisi culpa illo? Aliquid.</p>
-                <a href="#" class="btn btn-primary">Mas Info</a>
-            </div>
-        </div>
-        <div class="card-blog" style="width: 18rem;">
-            <img src="../imagenes/nosotros.jpeg" class="card-img-top" alt="blog" height="294" width="222">
-            <div class="card-body-one">
-                <h5 class="card-title text-center">title</h5>
-                <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates dignissimos cum amet adipisci vitae ullam.</p>
-                <a href="#" class="btn btn-primary">Mas Info</a>
-            </div>
+    <section class="section-blog">
 
-        </div>
-        <div class="card-blog" style="width: 18rem;">
-            <img src="../imagenes/nosotros.jpeg" class="card-img-top" alt="blog" height="294" width="222">
-            <div class="card-body-one">
-                <h5 class="card-title text-center">title</h5>
-                <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates dignissimos cum amet adipisci vitae ullam.</p>
-                <a href="#" class="btn btn-primary">Mas Info</a>
+        <div class="container d-flex align-items-center justify-content-center position-relative flex-wrap">
+            <div class="card d-flex position-relative flex-column">
+                <div class='imgContainer'>
+                    <img src='../imagenes/Netflix-blog.webp' width="250" height="166">
+                </div>
+                <div class="content">
+                    <h2>Qué ver en Netflix cuando no sabes qué ver</h2>
+                    <p>Busca por categorías, activa las categorías ocultas, aprovecha las etiquetas, puntúa lo que te gusta, puntúa lo que te gusta </p>
+                </div>
             </div>
-
+            <div class="card d-flex position-relative flex-column">
+                <div class='imgContainer'>
+                    <img src='../imagenes/pies-calambres-blog.jpg' width="250" height="166">
+                </div>
+                <div class="content">
+                    <h2>Para dormir mejor </h2>
+                    <p>Toda la población puede ser conocedora de una serie de consejos y rutinas para dormir correctamente cada noche. En Pikolin hemos recopilado las mejores pautas para que no se te vuelva a resistir una noche.</p>
+                </div>
+            </div>
+            <div class="card d-flex position-relative flex-column">
+                <div class='imgContainer'>
+                    <img src='../imagenes/libros-blog.jpg' width="250" height="166">
+                </div>
+                <div class="content">
+                    <h2>Leer alice kellen en pijamas? </h2>
+                    <p>Alice Kellen es una de las autoras de romance juvenil/New Adult más conocidas del género. En este blog les dejo mi opinión sobre las razones por las cuales deberían leer a la autora. Sus libros son muy...</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <div class="footer">
-        
+
         <div>
             <a href="https://m.facebook.com/Amimir-pijamas-101508048749269/?tsid=0.061134154321953904&source=result"><img src="../imagenes/facebook.png" width="50" height="50"></a>
         </div>

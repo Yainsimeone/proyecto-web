@@ -15,18 +15,38 @@
 </head>
 
 <body class="com">
-    <header class="header">
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img class="logo-header" src="../imagenes/Amimirlogo.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-5 -7 24 24" width="32" fill="currentColor"><path d="M1 0h12a1 1 0 0 1 0 2H1a1 1 0 1 1 0-2zm0 8h12a1 1 0 0 1 0 2H1a1 1 0 1 1 0-2zm0-4h12a1 1 0 0 1 0 2H1a1 1 0 1 1 0-2z"></path></svg>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
 
-        <a class="header__marca" href="../index.html"><img class="img" src="../imagenes/Amimirlogo.png" alt="logo" width="70" height="70"></a>
-        <nav class="nav">
-            <ul class="nav__lista">
-                <li class="nav__item"><a class="nav__enlace" href="../index.html">Inicio</a></li>
-                <li class="nav__item"><a class="nav__enlace" href="tienda.html">Tienda</a></li>
-                <li class="nav__item"><a class="nav__enlace" href="nosotros.html">Nosotros</a></li>
-                <li class="nav__item"><a class="nav__enlace" href="blog.html">Blog</a></li>
-                <li class="nav__item"><a class="nav__enlace" href="contacto.html">Contacto</a></li>
-
-            </ul>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-2.5 -2.5 24 24" width="32" fill="currentColor"><path d="M8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12zm6.32-1.094l3.58 3.58a1 1 0 1 1-1.415 1.413l-3.58-3.58a8 8 0 1 1 1.414-1.414z"></path></svg></button>
+                    </form>
+                </div>
+            </div>
         </nav>
     </header>
     <section>

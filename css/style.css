@@ -3,10 +3,12 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+
 /*inicio*/
 
 body {
-    background-image: url(../imagenes/fondo\ 1.webp);
+    background-image: url(../imagenes/color_grunge_pattern_liquidity_style_background2.jpg);
     background-color: dimgrey;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -46,7 +48,6 @@ body {
 .nav {
     /*background-color: greenyellow;*/
     padding: 1rem;
-
 }
 
 .nav__lista {
@@ -54,7 +55,6 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
 }
 
 .nav__item {
@@ -87,7 +87,6 @@ body {
     display: none;
 }
 
-
 .imagen {
     border-radius: 60%;
     border: solid 2px rgb(243, 228, 144);
@@ -98,14 +97,12 @@ body {
     animation: scale-in-center 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-
 @-webkit-keyframes scale-in-center {
     0% {
         -webkit-transform: scale(0);
         transform: scale(0);
         opacity: 1;
     }
-
     100% {
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -119,7 +116,6 @@ body {
         transform: scale(0);
         opacity: 1;
     }
-
     100% {
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -162,6 +158,82 @@ body {
     font-size: xx-large;
 }
 
+.get-in-touch {
+    max-width: 800px;
+    margin: 50px auto;
+    position: relative;
+}
+
+.get-in-touch .title {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 3.2em;
+    line-height: 48px;
+    padding-bottom: 48px;
+    color: #5543ca;
+    background: #5543ca;
+    background: -moz-linear-gradient(left, #f4524d 0%, #5543ca 100%) !important;
+    background: -webkit-linear-gradient(left, #f4524d 0%, #5543ca 100%) !important;
+    background: linear-gradient(to right, #f4524d 0%, #5543ca 100%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+.contact-form .form-field {
+    position: relative;
+    margin: 32px 0;
+}
+
+.contact-form .input-text {
+    display: block;
+    width: 100%;
+    height: 36px;
+    border-width: 0 0 2px 0;
+    border-color: #5543ca;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+.contact-form .input-text:focus {
+    outline: none;
+}
+
+.contact-form .input-text:focus+.label,
+.contact-form .input-text.not-empty+.label {
+    -webkit-transform: translateY(-24px);
+    transform: translateY(-24px);
+}
+
+.contact-form .label {
+    position: absolute;
+    left: 20px;
+    bottom: 11px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #5543ca;
+    cursor: text;
+    transition: -webkit-transform .2s ease-in-out;
+    transition: transform .2s ease-in-out;
+    transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+}
+
+.contact-form .submit-btn {
+    display: inline-block;
+    background-color: #000;
+    background-image: linear-gradient(125deg, #a72879, #064497);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    padding: 8px 16px;
+    border: none;
+    width: 200px;
+    cursor: pointer;
+}
+
 .footer {
     margin-top: 2rem;
     display: flex;
@@ -170,7 +242,6 @@ body {
     align-content: space-around;
     justify-content: space-around;
     align-items: center;
-
 }
 
 .footer_hijo1 img {
@@ -208,7 +279,6 @@ body {
     .footer__hijo5 {
         font-size: smaller;
     }
-
 }
 
 @media screen and (max-width: 425px) {
@@ -246,14 +316,12 @@ body {
     }
     .nav {
         display: none;
-
     }
     .header__marca {
         display: flex;
     }
     .header__menu {
         display: flex;
-
     }
     .botton {
         margin: 2rem;
@@ -270,29 +338,24 @@ body {
         -webkit-animation: scale-in-center 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         animation: scale-in-center 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
-
-
     @-webkit-keyframes scale-in-center {
         0% {
             -webkit-transform: scale(0);
             transform: scale(0);
             opacity: 1;
         }
-
         100% {
             -webkit-transform: scale(1);
             transform: scale(1);
             opacity: 1;
         }
     }
-
     @keyframes scale-in-center {
         0% {
             -webkit-transform: scale(0);
             transform: scale(0);
             opacity: 1;
         }
-
         100% {
             -webkit-transform: scale(1);
             transform: scale(1);
@@ -311,31 +374,10 @@ body {
     .footer__hijo5 {
         font-size: xx-small;
     }
-
-
-}
-
-/*tienda*/
-
-.section-tienda {
-    margin-top: 3rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    align-content: space-between;
-    flex-wrap: nowrap;
 }
 
 
-.botones {
-    display: flex;
-    justify-content: space-around;
-}
 /* nosotros*/
-
-.nosotros {
-    background-image: url(../imagenes/fondo\ 2.jfif);
-}
 
 .contenido {
     min-height: 200px;
@@ -348,13 +390,43 @@ body {
     grid-template-areas: "ele1 ele2 ele3" "ele1 ele4 ele5" "ele1 ele4 ele5";
 }
 
+.imagen-nosotros {
+    --k: 0;
+    --j: calc(1 - var(--k));
+    --list: transparent calc(50% - #{$w}),
+    red 0 calc(50% + #{$w}),
+    transparent 0;
+    place-self: center;
+    object-fit: cover;
+    width: 90vmin;
+    height: 90vmin;
+    filter: grayScale(var(--j));
+    --mask: radial-gradient(closest-side, red calc(#{$r} - 1px), transparent #{$r}),
+    radial-gradient(closest-side, transparent calc(#{$r} - #{$o} + var(--k)*2*#{$o} - 1px), red calc(#{$r} - #{$o} + var(--k)*2*#{$o}) calc(var(--k)*100% + var(--j)*#{$r} - 1px), transparent calc(var(--k)*100% + var(--j)*#{$r})),
+    linear-gradient(var(--list)),
+    linear-gradient(90deg, var(--list)),
+    linear-gradient(45deg, var(--list)),
+    linear-gradient(-45deg, var(--list));
+    mask: var(--mask);
+    mask-composite: add, intersect, add, add;
+    transition: --k .2s ease-out;
+}
+
+.imagen-nosotros:hover {
+    --k: 1
+}
+
 .contenido img {
     max-height: 500px;
     max-width: 500px;
     margin-left: 6px;
-    border-radius: 50%;
+    border-radius: 49%;
     border: 2px solid black;
     grid-area: ele1;
+    -webkit-border-radius: 49%;
+    -moz-border-radius: 49%;
+    -ms-border-radius: 49%;
+    -o-border-radius: 49%;
 }
 
 .quienes {
@@ -432,41 +504,75 @@ body {
         margin: 1rem;
     }
 }
+
+
 /*blog*/
 
-.bl {
-    background-color: dimgrey;
-    color: #5893D4;
-    background-image: url(../imagenes/fondo-4.jpg);
-}
-
-.container-seccion {
+.section-blog {
+    min-width: 100vw;
+    min-height: 100vh;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 4rem;
-    margin-top: 3rem;
-}
-
-.card-blog {
-    padding: 2rem;
-    margin-bottom: 1rem;
-}
-
-.card-body-one {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: space-around;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
+
+.container .card {
+    max-width: 300px;
+    height: 215px;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.container .card:hover {
+    height: 450px;
+}
+
+.container .card .imgContainer {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    top: -50px;
+    left: 10px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container .card .imgContainer img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.container .card .content {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease-in-out;
+}
+
+.container .card:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
+@media (max-width: 330px) {
+    .container .card .imgContainer {
+        left: -2px;
+    }
+}
+
+
 /*cotacto*/
 
 .com {
-    background-image: url(../imagenes/nosotros2.jpg);
-    background-color: dimgrey;
     color: #5893D4;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -516,4 +622,190 @@ body {
         justify-content: center;
         align-content: center;
     }
+}
+
+
+/*tienda*/
+
+.logo-header {
+    height: 13vh;
+    border-radius: 50%;
+    border: solid 1px black;
+}
+
+:root {
+    --size: 400px;
+    --lb: rgba(0, 0, 0, 0.5);
+}
+
+.prueba {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    background-color: var(--blue);
+    color: rgb(243, 196, 11);
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.container {
+    width: var(--size);
+    height: var(--size);
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+    justify-items: center;
+    align-items: center;
+    filter: drop-shadow(0px 0px 7px rgba(1, 1, 1, .7));
+}
+
+.productImage {
+    grid-column: 1/span 2;
+    grid-row: 1 /span 2;
+    width: var(--size);
+    height: var(--size);
+    background-size: cover;
+    clip-path: polygon( 20% 20%, 50% 20%, 50% 20%, 80% 20%, 80% 50%, 80% 50%, 80% 80%, 50% 80%, 50% 80%, 20% 80%, 20% 50%, 20% 50%);
+    transition: all 0.7s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+
+.shirtImg1 {
+    background-image: url(../imagenes/max-buzo-polar.jpg);
+    background-color: #24c02a;
+}
+
+.shirtImg2 {
+    background-image: url(../imagenes/pant\ polar\ soft.jpeg);
+    background-color: #cecb29;
+}
+
+.shirtImg3 {
+    background-image: url(../imagenes/pantus-tienda.jpg);
+    background-color: #cecb29;
+}
+
+.shirtImg4 {
+    background-image: url(../imagenes/buzo-teddy-tienda.jpeg);
+    background-color: #cecb29;
+}
+
+.shirtImg5 {
+    background-image: url(../imagenes/buzo\ oversize-tienda.jpeg);
+    background-color: #cecb29;
+}
+
+.shirtImg6 {
+    background-image: url(../imagenes/conjunto-polar-soft-tienda.jpg);
+    background-color: #cecb29;
+}
+
+.shirtImg7 {
+    background-image: url(../imagenes/pijama-adultos-tienda.jpeg);
+    background-color: #cecb29;
+}
+
+.shirtImg8 {
+    background-image: url(../imagenes/pijama-kid-tienda.jpeg);
+    background-color: #cecb29;
+}
+
+.shirtImg9 {
+    background-image: url(../imagenes/pantuplas-kid-tienda.jpg);
+    background-color: #cecb29;
+}
+
+h4,
+ul,
+span {
+    padding: 0;
+    margin: 0;
+}
+
+.size,
+.color {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: center;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.6s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+
+.size ul li,
+.color ul li {
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.color {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.color ul li span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: greenyellow;
+}
+
+.blue {
+    background-color: #0070ee;
+}
+
+.black {
+    background-color: #000;
+}
+
+.price {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: center;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.6s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+
+.price h4 {
+    margin-bottom: 8px;
+}
+
+.price span {
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.productName {
+    grid-column: 1;
+    grid-row: 2;
+    align-self: center;
+    justify-self: center;
+    z-index: 1;
+    transition: all 0.7s cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+
+.productImage:hover {
+    clip-path: polygon( 20% 0%, 50% 0%, 50% 20%, 100% 20%, 100% 50%, 80% 50%, 80% 100%, 50% 100%, 50% 80%, 0% 80%, 0% 50%, 20% 50%);
+    transform: rotate(-15deg);
+    transition: all 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.productImage:hover~* {
+    opacity: 1;
+    transform: rotate(-15deg);
+    transition: all 0.4s cubic-bezier(0.86, 0, 0.07, 1);
 }

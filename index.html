@@ -15,28 +15,41 @@
 </head>
 
 <body>
+    <header>
 
-    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img class="logo-header" src="../imagenes/Amimirlogo.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-5 -7 24 24" width="32" fill="currentColor"><path d="M1 0h12a1 1 0 0 1 0 2H1a1 1 0 1 1 0-2zm0 8h12a1 1 0 0 1 0 2H1a1 1 0 1 1 0-2zm0-4h12a1 1 0 0 1 0 2H1a1 1 0 1 1 0-2z"></path></svg>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/page/tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/page/blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/page/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/page/contacto.html">Contacto</a>
+                        </li>
 
-
-        <img class="header__menu" src="imagenes/menus.png" alt="menus" width="50" height="50">
-
-        <a class="header__marca" href="index.html"><img class="img" src="imagenes/Amimirlogo.png" alt="logo" width="70" height="70"></a>
-        <nav class="nav">
-            <ul class="nav__lista">
-                <li class="nav__item"><a class="nav__enlace" href="index.html">Inicio</a></li>
-                <li class="nav__item"><a class="nav__enlace" href="page/tienda.html">Tienda</a></li>
-                <li class="nav__item"><a class="nav__enlace" href="page/nosotros.html">Nosotros</a></li>
-                <li class="nav__item"><a class="nav__enlace" href="page/blog.html">Blog</a></li>
-                <li class="nav__item"><a class="nav__enlace" href="page/contacto.html">Contacto</a></li>
-
-            </ul>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-2.5 -2.5 24 24" width="32" fill="currentColor"><path d="M8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12zm6.32-1.094l3.58 3.58a1 1 0 1 1-1.415 1.413l-3.58-3.58a8 8 0 1 1 1.414-1.414z"></path></svg></button>
+                    </form>
+                </div>
+            </div>
         </nav>
-
-
-
     </header>
-
 
     <main>
         <section class="section">
@@ -48,8 +61,38 @@
         </section>
     </main>
     <footer>
-        <div class="promociones">
-            <div class="footer__hijo1">
+        <section class="get-in-touch">
+            <h1 class="title">Suscribite a Nuestras Promociones</h1>
+            <form class="contact-form row">
+                <div class="form-field col-lg-6">
+                    <input id="name" class="input-text js-input" type="text" required>
+                    <label class="label" for="name">Nombre</label>
+                </div>
+                <div class="form-field col-lg-6 ">
+                    <input id="email" class="input-text js-input" type="email" required>
+                    <label class="label" for="email">E-mail</label>
+                </div>
+                <div class="form-field col-lg-6 ">
+                    <input id="company" class="input-text js-input" type="text" required>
+                    <label class="label" for="company">Apellido</label>
+                </div>
+                <div class="form-field col-lg-6 ">
+                    <input id="phone" class="input-text js-input" type="text" required>
+                    <label class="label" for="phone">Celular</label>
+                </div>
+                <div class="form-field col-lg-12">
+                    <input id="message" class="input-text js-input" type="text" required>
+                    <label class="label" for="message">Mensaje</label>
+                </div>
+                <div class="form-field col-lg-12">
+                    <input class="submit-btn" type="submit" value="Enviar">
+                </div>
+            </form>
+        </section>
+        <!--
+       
+           <div class="promociones">
+               <div class="footer__hijo1">
                 <h2>Subcribite a nuestras promociones</h2>
             </div>
             <form class="form">
@@ -64,6 +107,7 @@
                 <button>Enviar</button>
             </form>
         </div>
+    -->
         <div class="footer">
             <div class="footer_hijo1">
                 <img src="imagenes/Amimirlogo.png" width="60" height="60">

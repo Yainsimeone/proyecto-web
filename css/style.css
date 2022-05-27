@@ -286,6 +286,10 @@ figcaption span:nth-of-type(4) {
     background-color: var(--contrast-color);
 }
 
+.seccion_nosotros {
+    margin-bottom: 14vh;
+}
+
 .container_div {
     margin-top: 4rem;
     display: flex;

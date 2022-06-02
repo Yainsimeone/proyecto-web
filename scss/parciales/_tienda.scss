@@ -21,8 +21,7 @@
     }
     
     .container {
-        width: var(--size);
-        height: var(--size);
+        @include hw(var(--size), var(--size));
         display: grid;
         grid-template-columns: repeat(2, 50%);
         grid-template-rows: repeat(2, 50%);
@@ -34,8 +33,7 @@
     .productImage {
         grid-column: 1/span 2;
         grid-row: 1 /span 2;
-        width: var(--size);
-        height: var(--size);
+        @include hw(var(--size), var(--size));
         background-size: cover;
         clip-path: polygon( 20% 20%, 50% 20%, 50% 20%, 80% 20%, 80% 50%, 80% 50%, 80% 80%, 50% 80%, 50% 80%, 20% 80%, 20% 50%, 20% 50%);
         transition: all 0.7s cubic-bezier(0.895, 0.03, 0.685, 0.22);
@@ -46,7 +44,7 @@
     }
     
     .shirtImg2 {
-        background-image: url(../imagenes/pant\ polar\ soft.jpeg);
+        background-image: url(../imagenes/pant-polar-soft.jpeg);
     }
     
     .shirtImg3 {
@@ -58,7 +56,7 @@
     }
     
     .shirtImg5 {
-        background-image: url(../imagenes/buzo\ oversize-tienda.jpeg);
+        background-image: url(../imagenes/buzo-oversize-tienda.jpeg);
     }
     
     .shirtImg6 {
@@ -74,7 +72,7 @@
     }
     
     .shirtImg9 {
-        background-image: url(../imagenes/pantuplas-kid-tienda.jpg);
+        background-image: url(../pantuplas-kid-tienda.jpg);
     }
     
     h4,
@@ -97,8 +95,7 @@
     .size ul li,
     .color ul li {
         list-style: none;
-        width: 20px;
-        height: 20px;
+        @include hw(20px, 20px);
         margin: 5px;
         padding: 5px;
         text-align: center;
@@ -111,8 +108,7 @@
     }
     
     .color ul li span {
-        width: 10px;
-        height: 10px;
+        @include hw(10px, 10px);
         border-radius: 50px;
         display: inline-block;
     }
@@ -147,8 +143,7 @@
     }
     
     .price span {
-        width: 20px;
-        height: 20px;
+        @include hw(20px, 20px);
         padding: 5px;
         background-color: rgba(0, 0, 0, 0.5);
     }

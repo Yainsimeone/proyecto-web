@@ -1,0 +1,11 @@
+@mixin hw($width:0, $height:0) {
+    width: $width;
+    height: $height;
+}
+
+@mixin flex($direccion, $eje-principal, $eje-secundario) {
+    display: flex;
+    flex-direction: $direccion;
+    justify-content: $eje-principal;
+    align-items: $eje-principal;
+}

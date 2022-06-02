@@ -45,9 +45,16 @@
 
 @media screen and (max-width: 767px) {
     .d-flex {
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+        align-content: center;
+    }
+}
+
+@media (max-width: 330px) {
+    .d-flex {
+        flex-wrap: wrap;
         align-content: center;
     }
 }

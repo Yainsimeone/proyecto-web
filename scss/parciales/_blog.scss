@@ -29,8 +29,7 @@
 
 .container .card .imgContainer {
     position: relative;
-    width: 250px;
-    height: 250px;
+    @include hw(250px, 250px);
     top: -50px;
     left: 10px;
     z-index: 1;
@@ -64,5 +63,7 @@
 @media (max-width: 330px) {
     .container .card .imgContainer {
         left: -2px;
+        display: flex;
+        flex-wrap: nowrap;
     }
 }

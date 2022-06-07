@@ -57,4 +57,14 @@
         flex-wrap: wrap;
         align-content: center;
     }
+    .card-body p {
+        text-align: center;
+        font-size: x-large;
+    }
+    .fa-brands,
+    .fab {
+        font-family: "Font Awesome 6 Brands";
+        font-weight: 400;
+        width: 100%;
+    }
 }

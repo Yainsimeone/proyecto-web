@@ -39,7 +39,7 @@ main:after {
 }
 
 main {
-  width: 100vh;
+  width: 100vw;
   height: 100vh;
   margin: 0;
   padding: 0;
@@ -49,8 +49,8 @@ main {
 }
 
 .figure_img {
-  width: auto;
-  height: 100%;
+  width: 100%;
+  height: auto;
   border-radius: 2px 34px;
   box-shadow: var(--box-shadow);
   animation: popInImg 700ms var(--acc-back) 1 forwards;
@@ -176,8 +176,8 @@ figcaption span:nth-of-type(4) {
 .get-in-touch .title {
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: 3.2em;
+  letter-spacing: 1px;
+  font-size: 2.7em;
   line-height: 48px;
   padding-bottom: 48px;
   color: #614f06;
@@ -190,8 +190,8 @@ figcaption span:nth-of-type(4) {
 
 .contact-form .input-text {
   display: block;
-  width: 36px;
-  height: 100%;
+  width: 100%;
+  height: 36px;
   border-width: 0 0 2px 0;
   border-color: #5543ca;
   font-size: 18px;
@@ -241,10 +241,10 @@ figcaption span:nth-of-type(4) {
   margin-top: 2rem;
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-around;
-  align-items: space-around;
   flex-wrap: nowrap;
   align-content: space-around;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .footer_hijo1 img {
@@ -256,17 +256,29 @@ figcaption span:nth-of-type(4) {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: space-between;
+  align-items: center;
 }
 
 .footer__hijo5 {
   margin-top: 2rem;
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-around;
-  align-items: space-around;
   flex-wrap: nowrap;
   align-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media (max-width: 330px) {
+  main {
+    padding: 25px;
+  }
+  .figure {
+    max-width: var(--fig-width);
+    max-height: var(--fig-height);
+    width: auto;
+    height: auto;
+  }
 }
 
 /*tienda*/
@@ -444,6 +456,15 @@ span {
   transition: all 0.4s cubic-bezier(0.86, 0, 0.07, 1);
 }
 
+@media (max-width: 330px) {
+  .prueba {
+    display: block;
+  }
+  .container .card {
+    flex-wrap: nowrap;
+  }
+}
+
 /* nosotros*/
 .overlay {
   position: absolute;
@@ -491,6 +512,7 @@ span {
 .container_img {
   width: 100%;
   animation: slideIn 1.5s ease-in-out forwards;
+  border-radius: 100px;
 }
 
 .par {
@@ -552,8 +574,7 @@ h1 {
 }
 
 .section-blog {
-  min-width: 100vw;
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -611,6 +632,31 @@ h1 {
     left: -2px;
     display: flex;
     flex-wrap: nowrap;
+  }
+  .section-blog {
+    min-height: 150vh;
+  }
+  .footer {
+    margin-top: -4rem;
+  }
+  h1 {
+    font-size: 35px;
+  }
+  .container_div {
+    margin-top: 4rem;
+    display: flex;
+    height: auto;
+    align-items: center;
+    color: #BF307F;
+    animation: expand .8s ease forwards;
+    position: relative;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: all .8s ease;
+    flex-direction: column-reverse;
+  }
+  .container_content_inner {
+    width: auto;
+    margin-left: auto;
   }
 }
 
@@ -671,6 +717,16 @@ h1 {
   .d-flex {
     flex-wrap: wrap;
     align-content: center;
+  }
+  .card-body p {
+    text-align: center;
+    font-size: x-large;
+  }
+  .fa-brands,
+  .fab {
+    font-family: "Font Awesome 6 Brands";
+    font-weight: 400;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
